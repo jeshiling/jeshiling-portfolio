@@ -29,7 +29,8 @@
   </nav>
 
   <section id="hero" class="hero">
-    <div class="hero-bg"></div>
+    <canvas id="hero-canvas"></canvas>
+    <div class="hero-overlay"></div>
     <div class="container hero-content">
       <div class="hero-text">
         <p class="hero-greeting">// Hello, I'm</p>
@@ -57,12 +58,6 @@
       </div>
       <div class="hero-visual">
         <div class="avatar-glow"></div>
-        <div class="avatar-ring">
-          <span style="--i:0"></span>
-          <span style="--i:1"></span>
-          <span style="--i:2"></span>
-          <span style="--i:3"></span>
-        </div>
         <div class="avatar">
           <img src="https://pbs.twimg.com/profile_images/1992611716664823808/NX-5Wn8K_400x400.jpg" alt="Jeshiling">
         </div>
@@ -371,6 +366,7 @@
     </div>
   </footer>
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
